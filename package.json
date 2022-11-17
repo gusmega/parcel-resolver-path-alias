@@ -1,0 +1,21 @@
+{
+  "name": "parcel-resolver-path-alias",
+  "version": "1.0.0",
+  "description": "A parcel resolver plugin to shorten import path and to enable absolute path import.",
+  "main": "index.js",
+  "keywords": [
+    "parcel",
+    "path",
+    "resolver",
+    "absolute path"
+  ],
+  "author": "gusmega",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12",
+    "parcel": ">=2.0.0"
+  },
+  "dependencies": {
+    "@parcel/plugin": "^2.8.0"
+  }
+}

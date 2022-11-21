@@ -8,9 +8,13 @@ module.exports = new Resolver({
 
     for (const ext of extensions) {
       const filePath =  path.join(projectRoot, 'src', `${specifier}.${ext}`)
-
       if (fs.existsSync(filePath)) {
         return { filePath }
+      }
+
+      const indexFilePath =  path.join(projectRoot, 'src', `${specifier}/index.${ext}`)
+      if (fs.existsSync(indexFilePath)) {
+        return { filePath: indexFilePath }
       }
     }
 
